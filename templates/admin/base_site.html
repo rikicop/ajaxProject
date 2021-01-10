@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block title %} {{ title }} | Administración de Empleados {% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+
+<!--<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">-->
+
+<img src="{% static 'images/logo.png' %}" alt="Lamp" width="32" height="32">
+
+<a href="{% url 'admin:index' %}">Sistema de Administración A & B</a>
+
+
+
+</h1>
+
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
